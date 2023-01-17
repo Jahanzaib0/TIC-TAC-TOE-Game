@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: rgb(101, 101, 133);
+    height: 10vh;
+    width: 100vw;
+}
+nav ul li{
+    font-size: 2em;
+    color: black;
+    font-family: sans-serif;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-style: italic;
+    text-decoration: underline;
+}
+nav ul li:hover{
+    color: whitesmoke;
+    cursor: pointer;
+}
+.game{
+    color: black;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 34px;
+}
+.container{
+    display: grid;
+    grid-template-rows: repeat(3, 10vw);
+    grid-template-columns: repeat(3, 10vw);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.box{
+    border: 2px solid black;
+    font-size: 9vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box:hover{
+    background-color: aquamarine;
+}
+.gameInfo{
+    padding: 0em 2em;
+}
+.imgbox img{
+    width: 0;
+    transition: 1s ease-in-out;
+}
+.br-r{
+    border-right: 0;
+}
+.br-l{
+    border-left: 0;
+}
+.br-t{
+    border-top: 0;
+}
+.br-b{
+    border-bottom: 0;
+}
+#reset{
+    margin: 1em;
+    height: 2em;
+    width: 10em;
+    color: red;
+    background-color: aqua;
+    cursor: pointer;
+}
+.gameInfo h1{
+    font-size: 1.5rem;
+}
+@media screen and (max-width: 800px) {
+    .game{
+      flex-wrap: wrap;
+    }
+    .gameInfo{
+        margin-top: 5rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .gameInfo h1{
+        font-size: 3.5rem;
+    }
+    .container{
+        grid-template-rows: repeat(3, 18vw);
+        grid-template-columns: repeat(3, 18vw);
+    }
+}
